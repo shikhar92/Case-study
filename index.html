@@ -1,0 +1,76 @@
+<html>
+  <head>
+    <title>Image Identification Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+    <center>
+      <div class="col-xs-12 header_div">
+        <h2>Case studies
+        </h2>          
+      </div>
+    </center>
+    <center>  
+<ol>  
+    <div class="text_images_and_result">
+        <li>
+<b>Test Image 1</b>
+<img id="Sunglass"src="sun.jpg"class="img-responsive">
+        </li>
+        <h5>Output on Google Lens:<span> Aviator Sunglass</span></h5>
+        <h5>Output on Mobilenet:<span> Sunglass </span></h5>
+<div class="mini_result">
+
+    <h4><b>Result:</b> Both are correct in this case. </h4><hr>
+    <h4>  </h4>
+    <br><br>
+    <li>
+      <b>Test Image 2</b>
+      <img id="heli"src="heli.jpg"class="img-responsive">
+              </li>
+              <h5>Output on Google Lens: Helicopter<span> </span></h5>
+              <h5>Output on Mobilenet: Airship,Mousecart<span> </span></h5>
+      <div class="mini_result">
+      
+          <h4><b>Result:</b> Google Lens is more accurate this time.</h4><hr>
+          <h4>  </h4>
+          <br><br>
+          <li>
+            <b>Test Image 3</b>
+            <img id="bottle"src="bottle.jpg"class="img-responsive">
+                    </li>
+                    <h5>Output on Google Lens:<span> Plastic Bottle</span></h5>
+                    <h5>Output on Mobilenet: Water Bottle,Beer Glass<span> </span></h5>
+            <div class="mini_result">
+            
+                <h4><b>Result:</b> Google Lens is more accurate this time.  </h4><hr>
+                <h4>  </h4>
+                <br><br>
+                <li>
+                      <h4><b>Final Result: </b><b>Google</b> is more accurate than <b>Mobilenet</b> in my case study.  </h4><hr>
+                      <h4>  </h4>
+</div>
+
+    </div> 
+  </ol>
+  </center>
+  <hr>
+    <div class="copy_right_footer">
+      Developed by - Shikhar
+    </div>
+
+<script src="main.js"></script>
+  </body>
+</html>
